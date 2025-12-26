@@ -43,7 +43,7 @@ def main():
                         case "CommitCommentEvent":
                             print("-", f"Commit Commented {payload["action"]} on {i["repo"]["name"]}")
                         case "PushEvent":
-                            print("-", f" to {i["repo"]["name"]}")
+                            print("-", f"Pushed to {i["repo"]["name"]}")
                         case "PullRequestEvent":
                             print("-", f"{payload["action"]} Pull Request {payload["pull_request"]} on {i["repo"]["name"]}")
                         case "PullRequestReviewEvent":
